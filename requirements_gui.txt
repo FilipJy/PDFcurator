@@ -1,0 +1,7 @@
+tkinterx
+pillow
+PyMuPDF
+numpy
+ebooklib
+requests
+reportlab
