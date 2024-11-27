@@ -162,6 +162,10 @@ One of the key advantages of converting a document to JSON format is the ability
 
 Metadata can be added manually or fetched via the Google Books API using an ISBN.
 
+# Known issues
+
+- When creating a new text box, the new bbox is displayed on the original PDF
+
 # Acknowledgment
 
 The software was funded by the Institutional support for long term conceptual development of a research organization (The Moravian Library) by the Czech Ministry of Culture.

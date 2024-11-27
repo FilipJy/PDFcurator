@@ -1,4 +1,3 @@
-
 import platform
 import tkinter as tk
 from tkinter import messagebox, simpledialog
@@ -740,8 +739,3 @@ class PDFViewer(tk.Tk):
 def main(json_path, pdf_path):
     app = PDFViewer(json_path, pdf_path)
     app.mainloop()
-
-if __name__ == '__main__':
-    json_path = 'output_data.json'  
-    pdf_path = 'your_pdf_file.pdf'  
-    main(json_path, pdf_path)

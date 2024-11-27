@@ -24,6 +24,7 @@ class ImageUtils:
         for detection in page_data.get('detections', []):
             bbox = detection['bbox']
             class_name = detection['class']
+            name = detection.get('name', '')
             
             xmin, ymin, xmax, ymax = [coord * ratio for coord in bbox]
             
@@ -38,6 +39,8 @@ class ImageUtils:
             
             rect_id = canvas.create_rectangle(xmin, ymin, xmax, ymax, outline=color, width=2)
             
+            if class_name == 'Picture' and name:
+                canvas.create_text(xmin, ymin - 10, text=name, anchor='nw', fill=color, font=("Helvetica", 10, "bold"))
             
     def display_blank_image(self, canvas, size):
         canvas_width = max(canvas.winfo_width(), 1)
